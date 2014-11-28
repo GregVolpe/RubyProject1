@@ -7,7 +7,9 @@ class Problem2
     while !theFile.eof?
       line = theFile.readline
       hash[i] = line
+      puts hash[i]
       i=i+1
+
     end
   end
   def readHash
