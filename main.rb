@@ -1,6 +1,7 @@
 load 'problem3.rb'
 load 'problem4.rb'
 load 'problem5.rb'
+load 'problem7.rb'
 
 $MAIN_VAR = 20 # FOR PROBLEM 5 MAIN GLOBAL VAR
 
@@ -11,7 +12,7 @@ $MAIN_VAR = 20 # FOR PROBLEM 5 MAIN GLOBAL VAR
 #array = ["ie","someie", "somethingie","nope", "yupyup","123ie123", "Sunday", "Monday", "Tuesday", "Wednesday", "Tursday", "Friday", "Saturday", "Mondaye", "Tuesday9"]
 #prob4.e_names(array)
 #prob4.parseFile("problem4b.txt")
-
+=begin
 prob5 = Problem5.new
 prob5.simpleMath
 prob5.accessClassVar2
@@ -35,3 +36,34 @@ puts 'prob5.getGlobalVar'
 prob5.getGlobalVar
 puts 'prob5_2.compoundStatement'
 prob5_2.compoundStatement
+=end
+
+#PROBLEM 7
+class Problem7_1
+  class << self
+    def speak
+      puts "I'm class Problem7"
+    end
+    def Problem7_1::create_method(name)
+      define_method(name){puts "Your name is #{name}"}
+    end
+  end
+end
+
+class Problem7_5
+  LIST = %w(a b c)
+  LIST.each do |x|
+    define_method(x) do |args|
+      puts args+5
+    end
+  end
+end
+Problem7_1.speak
+Problem7_1.create_method('mine')
+Problem7_1.new.mine
+Problem7_1.create_method('greg')
+Problem7_1.new.greg
+Problem7_5.new.a(10)
+Problem7_5.new.b(200)
+
+Problem7.new.a(10)
