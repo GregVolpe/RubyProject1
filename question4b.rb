@@ -15,7 +15,7 @@
 
 arr = []
 arr2 = []
-f = File.open("question4b.txt") or die "Unable to open file..."
+f = File.open("problem4b.txt") or die "Unable to open file..."
 f.each_line {|line| arr.push line}
 
 puts "=============================================="

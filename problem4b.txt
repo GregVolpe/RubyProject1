@@ -1,0 +1,7 @@
+This is a very simple  text file.  We will be outputing the text to a new file.
+~This line sure won't be included in the output.
+This line will be in the output, but Darcy won't have the same name.
+
+I think  Darcy was born in 2014, but if  you are looking at the output you'll get the wrong answer!
+~psst, you won't see this either!
+This text is littered with errors  such as double  spaces (like the double space between the words double space!), but you won't see that either.
