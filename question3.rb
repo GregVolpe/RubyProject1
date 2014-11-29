@@ -16,7 +16,7 @@
 
 =end
 
-fileName = "question3.txt"
+fileName = "problem3.txt"
 hashGenerator = {}
 hashGeneratorTemp = {}
 
