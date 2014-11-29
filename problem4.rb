@@ -1,3 +1,7 @@
+#GREG VOLPE
+#DR. GANCHHEV
+#ASSIGNMENT 2 CS 355
+#PROBLEM 4
 class Problem4
   #find the number of strings that end in either ie or y
   def e_names(strings)

@@ -1,3 +1,8 @@
+#GREG VOLPE
+#DR. GANCHHEV
+#ASSIGNMENT 2 CS 355
+#PROBLEM 3
+
 class Problem3
 
   def parseFile(mFile)
