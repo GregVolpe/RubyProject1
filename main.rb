@@ -1,4 +1,3 @@
-load 'problem1.rb'
 load 'problem2.rb'
 
 prob2 = Problem2.new
