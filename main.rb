@@ -2,7 +2,9 @@ load 'problem3.rb'
 load 'problem4.rb'
 load 'problem5.rb'
 load 'problem7.rb'
+load 'problem8.rb'
 load 'problem9.rb'
+require 'set'
 $MAIN_VAR = 20 # FOR PROBLEM 5 MAIN GLOBAL VAR
 
 #prob3 = Problem3.new
@@ -36,6 +38,7 @@ puts 'prob5.getGlobalVar'
 prob5.getGlobalVar
 puts 'prob5_2.compoundStatement'
 prob5_2.compoundStatement
+prob5.sub1
 =end
 =begin
 #PROBLEM 7
@@ -67,9 +70,8 @@ Problem7_5.new.a(10)
 Problem7_5.new.b(200)
 Problem7.new.a(10)
 =end
-prob5 = Problem5.new
-prob5.sub1
-
+prob8 = Problem8.new
+prob8.runProblem8
 =begin
 prob8 = Problem9.new
 prob8.doModularMath

@@ -82,11 +82,14 @@ class Problem5
   end
   def sub1
     i = 10
-    puts i
+    @@CLASS_VAR = 25
+    puts "We made local var i = #{i.to_s} and changed the value of @@CLASS_VAR = #{@@CLASS_VAR.to_s} in Sub1"
     sub2
+    puts "We made local var i = #{i.to_s} and changed the value of @@CLASS_VAR = #{@@CLASS_VAR.to_s} in Sub1"
   end
   def sub2
     i= 15
-    puts i
+    @@CLASS_VAR = 35
+    puts "We made local var i = #{i.to_s} and changed the value of @@CLASS_VAR = #{@@CLASS_VAR.to_s} in Sub2"
   end
 end
