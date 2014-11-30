@@ -67,6 +67,11 @@ Problem7_5.new.a(10)
 Problem7_5.new.b(200)
 Problem7.new.a(10)
 =end
+prob5 = Problem5.new
+prob5.sub1
+
+=begin
 prob8 = Problem9.new
 prob8.doModularMath
 prob8.doSymbolMath
+=end
