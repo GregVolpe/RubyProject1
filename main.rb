@@ -2,7 +2,7 @@ load 'problem3.rb'
 load 'problem4.rb'
 load 'problem5.rb'
 load 'problem7.rb'
-
+load 'problem9.rb'
 $MAIN_VAR = 20 # FOR PROBLEM 5 MAIN GLOBAL VAR
 
 #prob3 = Problem3.new
@@ -37,7 +37,7 @@ prob5.getGlobalVar
 puts 'prob5_2.compoundStatement'
 prob5_2.compoundStatement
 =end
-
+=begin
 #PROBLEM 7
 class Problem7_1
   class << self
@@ -65,5 +65,8 @@ Problem7_1.create_method('greg')
 Problem7_1.new.greg
 Problem7_5.new.a(10)
 Problem7_5.new.b(200)
-
 Problem7.new.a(10)
+=end
+prob8 = Problem9.new
+prob8.doModularMath
+prob8.doSymbolMath
