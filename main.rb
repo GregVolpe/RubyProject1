@@ -4,6 +4,7 @@ load 'problem5.rb'
 load 'problem7.rb'
 load 'problem8.rb'
 load 'problem9.rb'
+load 'extra_credit.rb'
 require 'set'
 $MAIN_VAR = 20 # FOR PROBLEM 5 MAIN GLOBAL VAR
 
@@ -70,10 +71,22 @@ Problem7_5.new.a(10)
 Problem7_5.new.b(200)
 Problem7.new.a(10)
 =end
-prob8 = Problem8.new
-prob8.runProblem8
+#prob8 = Problem8.new
+#prob8.runProblem8
 =begin
 prob8 = Problem9.new
 prob8.doModularMath
 prob8.doSymbolMath
 =end
+
+ec = ExtraCredit.new
+begin
+  ec.fooPrivate("myValue")
+rescue Exception =>e
+  puts "Exception: #{e}"
+end
+ec.fooPublic("Something")
+ec.callPrivateMember("something Private")
+ec.instance_eval{fooPrivate("Something Else")}
+puts "ExtraCredit.class_variable_get(:@@publicClassVar): #{ExtraCredit.class_variable_get(:@@publicClassVar)}"
+puts "ExtraCredit.class_variable_get(:@@privateClassVar): #{ExtraCredit.class_variable_get(:@@privateClassVar)}"
