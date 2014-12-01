@@ -1,6 +1,6 @@
 load 'problem3.rb'
 load 'problem4.rb'
-load 'problem5_old.rb'
+load 'problem5.rb'
 load 'problem7.rb'
 load 'problem8.rb'
 load 'problem9.rb'
@@ -15,6 +15,9 @@ $MAIN_VAR = 20 # FOR PROBLEM 5 MAIN GLOBAL VAR
 #array = ["ie","someie", "somethingie","nope", "yupyup","123ie123", "Sunday", "Monday", "Tuesday", "Wednesday", "Tursday", "Friday", "Saturday", "Mondaye", "Tuesday9"]
 #prob4.e_names(array)
 #prob4.parseFile("problem4b.txt")
+
+prob5 = Problem5.new
+prob5.runProblem5
 =begin
 prob5 = Problem5Old.new
 prob5.simpleMath
@@ -79,6 +82,7 @@ prob8.doModularMath
 prob8.doSymbolMath
 =end
 
+=begin
 ec = ExtraCredit.new
 begin
   ec.fooPrivate("myValue")
@@ -90,3 +94,4 @@ ec.callPrivateMember("something Private")
 ec.instance_eval{fooPrivate("Something Else")}
 puts "ExtraCredit.class_variable_get(:@@publicClassVar): #{ExtraCredit.class_variable_get(:@@publicClassVar)}"
 puts "ExtraCredit.class_variable_get(:@@privateClassVar): #{ExtraCredit.class_variable_get(:@@privateClassVar)}"
+=end
