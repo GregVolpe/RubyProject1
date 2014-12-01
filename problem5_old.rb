@@ -2,7 +2,7 @@
 #DR. GANCHHEV
 #ASSIGNMENT 2 CS 355
 #PROBLEM 5
-class Problem5
+class Problem5Old
   #Variable Declaration
   $GLOBAL_VAR = 10 #global variable
   @@CLASS_VAR = 10#lass variable
