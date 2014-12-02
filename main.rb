@@ -8,16 +8,19 @@ load 'extra_credit.rb'
 require 'set'
 $MAIN_VAR = 20 # FOR PROBLEM 5 MAIN GLOBAL VAR
 
-#prob3 = Problem3.new
-#prob3.parseFile("problem3.txt")
-
-#prob4 = Problem4.new
-#array = ["ie","someie", "somethingie","nope", "yupyup","123ie123", "Sunday", "Monday", "Tuesday", "Wednesday", "Tursday", "Friday", "Saturday", "Mondaye", "Tuesday9"]
-#prob4.e_names(array)
-#prob4.parseFile("problem4b.txt")
-
-prob5 = Problem5.new
-prob5.runProblem5
+  puts '=====RUNNING PROBLEM 3====='
+  prob3 = Problem3.new
+  prob3.parseFile("problem3.txt")
+puts '=====END PROBLEM 3====='
+puts '=====RUNNING PROBLEM 4====='
+  prob4 = Problem4.new
+  array = ["ie","someie", "somethingie","nope", "yupyup","123ie123", "Sunday", "Monday", "Tuesday", "Wednesday", "Tursday", "Friday", "Saturday", "Mondaye", "Tuesday9"]
+  prob4.e_names(array)
+  prob4.parseFile("problem4b.txt")
+puts '=====END PROBLEM 4====='
+puts '=====RUNNING PROBLEM 5====='
+  prob5 = Problem5.new
+  prob5.runProblem5
 =begin
 prob5 = Problem5Old.new
 prob5.simpleMath
@@ -44,7 +47,8 @@ puts 'prob5_2.compoundStatement'
 prob5_2.compoundStatement
 prob5.sub1
 =end
-=begin
+puts '=====END PROBLEM 5====='
+puts '=====RUNNING PROBLEM 7====='
 #PROBLEM 7
 class Problem7_1
   class << self
@@ -73,16 +77,18 @@ Problem7_1.new.greg
 Problem7_5.new.a(10)
 Problem7_5.new.b(200)
 Problem7.new.a(10)
-=end
-#prob8 = Problem8.new
-#prob8.runProblem8
-=begin
-prob8 = Problem9.new
-prob8.doModularMath
-prob8.doSymbolMath
-=end
+puts '=====END PROBLEM 7====='
+puts '=====RUNNING PROBLEM 8====='
+prob8 = Problem8.new
+prob8.runProblem8
+puts '=====END PROBLEM 8====='
+puts '=====RUNNING PROBLEM 9====='
+prob9 = Problem9.new
+prob9.doModularMath
+prob9.doSymbolMath
+puts '=====END PROBLEM 9====='
 
-=begin
+puts '=====RUNNING EXTRA CREDIT====='
 ec = ExtraCredit.new
 begin
   ec.fooPrivate("myValue")
@@ -94,4 +100,4 @@ ec.callPrivateMember("something Private")
 ec.instance_eval{fooPrivate("Something Else")}
 puts "ExtraCredit.class_variable_get(:@@publicClassVar): #{ExtraCredit.class_variable_get(:@@publicClassVar)}"
 puts "ExtraCredit.class_variable_get(:@@privateClassVar): #{ExtraCredit.class_variable_get(:@@privateClassVar)}"
-=end
+puts '=====END EXTRA CREDIT====='
