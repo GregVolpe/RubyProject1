@@ -1,3 +1,10 @@
+=begin
+Greg Volpe
+Dr. Ganchev
+CS 355 - Programming Languages
+Assignment 2 - Main Program
+=end
+
 load 'problem3.rb'
 load 'problem4.rb'
 load 'problem5.rb'

@@ -1,7 +1,9 @@
-#GREG VOLPE
-#DR. GANCHHEV
-#ASSIGNMENT 2 CS 355
-#PROBLEM 5
+=begin
+Greg Volpe
+Dr. Ganchev
+CS 355 - Programming Languages
+Assignment 2 - Problem 5 Old Class DO NOT USE
+=end
 class Problem5Old
   #Variable Declaration
   $GLOBAL_VAR = 10 #global variable
