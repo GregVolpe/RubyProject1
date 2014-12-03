@@ -60,40 +60,41 @@ while input!='exit'
       puts '=====END PROBLEM 5====='
   end
 
-  if (input.to_i ==7 && !@restart)
-    puts '=====RUNNING PROBLEM 7====='
-    #PROBLEM 7
-    class Problem7_1
-      class << self
-        def speak
-          puts "I'm class Problem7"
-        end
-        def Problem7_1::create_method(name)
-          define_method(name){puts "Your name is #{name}"}
-        end
+  if (input.to_i ==7)
+    class A
+      def fun1
+        puts 'Fun 1!'
+      end
+      def fun2
+        puts 'Fun 2!'
       end
     end
-
-    class Problem7_5
-      LIST = %w(a b c)
-      LIST.each do |x|
-        define_method(x) do |args|
-          puts args+5
-        end
+    a = A.new
+    a.fun1
+    a.fun2
+    class A
+      def fun3
+        puts 'Fun 3!'
+        @something = 'Write something'
+      end
+      def printSomething
+        puts @something
       end
     end
-    Problem7_1.speak
-    Problem7_1.create_method('mine')
-    Problem7_1.new.mine
-    Problem7_1.create_method('greg')
-    Problem7_1.new.greg
-    Problem7_5.new.a(10)
-    Problem7_5.new.b(200)
-    Problem7.new.a(10)
+    a.fun3
+    a.printSomething
+    prob7 = Problem7.new
+    prob7.printSomething
+    class Problem7
+      def printSomethingElse(something)
+        puts something
+      end
+    end
+    prob7.printSomethingElse("Don't say hello world again!")
     puts '=====END PROBLEM 7====='
     puts 'YOU MUST RESTART THE APPLICATION TO RUN 7 AGAIN'
     @restart = true
-  elsif(input.to_i==7 && @restart)
+  elsif(input.to_i==7)
     puts 'You must restart to run problem 7 again'
   end
   if(input.to_i ==8)
